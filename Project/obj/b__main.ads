@@ -247,8 +247,6 @@ package ada_main is
    --  nrf.spi_master%b
    --  nrf.tasks%s
    --  nrf.tasks%b
-   --  nrf.adc%s
-   --  nrf.adc%b
    --  nrf.clock%s
    --  nrf.clock%b
    --  nrf.ppi%s
@@ -266,12 +264,14 @@ package ada_main is
    --  microbit%s
    --  microbit.console%s
    --  microbit.console%b
+   --  microbit.radio%s
+   --  microbit.radio%b
+   --  nrf.adc%s
+   --  nrf.adc%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
    --  collectinput%s
    --  collectinput%b
-   --  microbit.radio%s
-   --  microbit.radio%b
    --  brain%s
    --  brain%b
    --  main%b

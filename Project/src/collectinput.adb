@@ -14,8 +14,8 @@ package body CollectInput is
       analog1xRaw := Analog(analog1xPin);
       analog1yRaw := Analog(analog1yPin);
       
-      analog1xVal := Uint8(0.248 * Float(analog1xRaw));
-      analog1yVal := Uint8(0.248 * Float(analog1yRaw));
+      analog1xVal := Uint8((255.0/1023.0)* Float(analog1xRaw));
+      analog1yVal := Uint8((255.0/1023.0)* Float(analog1yRaw));
       
       if Set(button1Pin) then
          button1Val := 1;

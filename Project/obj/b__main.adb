@@ -21,34 +21,34 @@ package body ada_main is
    E153 : Short_Integer; pragma Import (Ada, E153, "system__finalization_masters_E");
    E008 : Short_Integer; pragma Import (Ada, E008, "ada__real_time_E");
    E160 : Short_Integer; pragma Import (Ada, E160, "system__pool_global_E");
-   E222 : Short_Integer; pragma Import (Ada, E222, "system__tasking__protected_objects_E");
-   E247 : Short_Integer; pragma Import (Ada, E247, "system__tasking__protected_objects__multiprocessors_E");
-   E229 : Short_Integer; pragma Import (Ada, E229, "system__tasking__restricted__stages_E");
+   E221 : Short_Integer; pragma Import (Ada, E221, "system__tasking__protected_objects_E");
+   E249 : Short_Integer; pragma Import (Ada, E249, "system__tasking__protected_objects__multiprocessors_E");
+   E228 : Short_Integer; pragma Import (Ada, E228, "system__tasking__restricted__stages_E");
    E151 : Short_Integer; pragma Import (Ada, E151, "hal__gpio_E");
    E183 : Short_Integer; pragma Import (Ada, E183, "hal__i2c_E");
    E176 : Short_Integer; pragma Import (Ada, E176, "hal__spi_E");
    E187 : Short_Integer; pragma Import (Ada, E187, "hal__uart_E");
-   E218 : Short_Integer; pragma Import (Ada, E218, "memory_barriers_E");
-   E216 : Short_Integer; pragma Import (Ada, E216, "cortex_m__nvic_E");
-   E209 : Short_Integer; pragma Import (Ada, E209, "nrf__events_E");
+   E194 : Short_Integer; pragma Import (Ada, E194, "memory_barriers_E");
+   E192 : Short_Integer; pragma Import (Ada, E192, "cortex_m__nvic_E");
+   E211 : Short_Integer; pragma Import (Ada, E211, "nrf__events_E");
    E142 : Short_Integer; pragma Import (Ada, E142, "nrf__gpio_E");
-   E211 : Short_Integer; pragma Import (Ada, E211, "nrf__gpio__tasks_and_events_E");
-   E213 : Short_Integer; pragma Import (Ada, E213, "nrf__interrupts_E");
+   E213 : Short_Integer; pragma Import (Ada, E213, "nrf__gpio__tasks_and_events_E");
+   E215 : Short_Integer; pragma Import (Ada, E215, "nrf__interrupts_E");
    E171 : Short_Integer; pragma Import (Ada, E171, "nrf__rtc_E");
    E174 : Short_Integer; pragma Import (Ada, E174, "nrf__spi_master_E");
-   E195 : Short_Integer; pragma Import (Ada, E195, "nrf__tasks_E");
-   E236 : Short_Integer; pragma Import (Ada, E236, "nrf__clock_E");
-   E220 : Short_Integer; pragma Import (Ada, E220, "nrf__ppi_E");
-   E234 : Short_Integer; pragma Import (Ada, E234, "nrf__radio_E");
+   E198 : Short_Integer; pragma Import (Ada, E198, "nrf__tasks_E");
+   E196 : Short_Integer; pragma Import (Ada, E196, "nrf__adc_E");
+   E235 : Short_Integer; pragma Import (Ada, E235, "nrf__clock_E");
+   E217 : Short_Integer; pragma Import (Ada, E217, "nrf__ppi_E");
+   E233 : Short_Integer; pragma Import (Ada, E233, "nrf__radio_E");
    E178 : Short_Integer; pragma Import (Ada, E178, "nrf__timers_E");
    E181 : Short_Integer; pragma Import (Ada, E181, "nrf__twi_E");
    E185 : Short_Integer; pragma Import (Ada, E185, "nrf__uart_E");
    E133 : Short_Integer; pragma Import (Ada, E133, "nrf__device_E");
-   E193 : Short_Integer; pragma Import (Ada, E193, "microbit__console_E");
-   E238 : Short_Integer; pragma Import (Ada, E238, "microbit__radio_E");
-   E191 : Short_Integer; pragma Import (Ada, E191, "nrf__adc_E");
+   E237 : Short_Integer; pragma Import (Ada, E237, "microbit__console_E");
    E189 : Short_Integer; pragma Import (Ada, E189, "microbit__iosfortasking_E");
    E128 : Short_Integer; pragma Import (Ada, E128, "collectinput_E");
+   E239 : Short_Integer; pragma Import (Ada, E239, "microbit__radio_E");
    E005 : Short_Integer; pragma Import (Ada, E005, "brain_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 3) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -203,11 +203,11 @@ package body ada_main is
       System.Pool_Global'Elab_Spec;
       E160 := E160 + 1;
       System.Tasking.Protected_Objects'Elab_Body;
-      E222 := E222 + 1;
+      E221 := E221 + 1;
       System.Tasking.Protected_Objects.Multiprocessors'Elab_Body;
-      E247 := E247 + 1;
+      E249 := E249 + 1;
       System.Tasking.Restricted.Stages'Elab_Body;
-      E229 := E229 + 1;
+      E228 := E228 + 1;
       HAL.GPIO'ELAB_SPEC;
       E151 := E151 + 1;
       HAL.I2C'ELAB_SPEC;
@@ -216,22 +216,23 @@ package body ada_main is
       E176 := E176 + 1;
       HAL.UART'ELAB_SPEC;
       E187 := E187 + 1;
-      E218 := E218 + 1;
-      E216 := E216 + 1;
-      E209 := E209 + 1;
+      E194 := E194 + 1;
+      E192 := E192 + 1;
+      E211 := E211 + 1;
       Nrf.Gpio'Elab_Spec;
       Nrf.Gpio'Elab_Body;
       E142 := E142 + 1;
-      E211 := E211 + 1;
       E213 := E213 + 1;
+      E215 := E215 + 1;
       E171 := E171 + 1;
       Nrf.Spi_Master'Elab_Spec;
       Nrf.Spi_Master'Elab_Body;
       E174 := E174 + 1;
-      E195 := E195 + 1;
-      E236 := E236 + 1;
-      E220 := E220 + 1;
-      E234 := E234 + 1;
+      E198 := E198 + 1;
+      E196 := E196 + 1;
+      E235 := E235 + 1;
+      E217 := E217 + 1;
+      E233 := E233 + 1;
       Nrf.Timers'Elab_Spec;
       Nrf.Timers'Elab_Body;
       E178 := E178 + 1;
@@ -245,14 +246,13 @@ package body ada_main is
       Nrf.Device'Elab_Body;
       E133 := E133 + 1;
       Microbit.Console'Elab_Body;
-      E193 := E193 + 1;
-      Microbit.Radio'Elab_Spec;
-      E238 := E238 + 1;
-      E191 := E191 + 1;
+      E237 := E237 + 1;
       Microbit.Iosfortasking'Elab_Spec;
       Microbit.Iosfortasking'Elab_Body;
       E189 := E189 + 1;
       E128 := E128 + 1;
+      Microbit.Radio'Elab_Spec;
+      E239 := E239 + 1;
       Brain'Elab_Spec;
       Brain'Elab_Body;
       E005 := E005 + 1;
@@ -281,13 +281,13 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Martinsen\Documents\git-repos\rts-car-remote\Project\obj\collectinput.o
-   --   C:\Users\Martinsen\Documents\git-repos\rts-car-remote\Project\obj\brain.o
-   --   C:\Users\Martinsen\Documents\git-repos\rts-car-remote\Project\obj\main.o
-   --   -LC:\Users\Martinsen\Documents\git-repos\rts-car-remote\Project\obj\
-   --   -LC:\Users\Martinsen\Documents\git-repos\rts-car-remote\Project\obj\
-   --   -LC:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
-   --   -LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+   --   D:\git-repos\rts-car-remote\Project\obj\collectinput.o
+   --   D:\git-repos\rts-car-remote\Project\obj\brain.o
+   --   D:\git-repos\rts-car-remote\Project\obj\main.o
+   --   -LD:\git-repos\rts-car-remote\Project\obj\
+   --   -LD:\git-repos\rts-car-remote\Project\obj\
+   --   -LD:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+   --   -LD:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
    --   -static
    --   -lgnarl
    --   -lgnat

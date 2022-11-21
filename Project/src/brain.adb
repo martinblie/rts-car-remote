@@ -16,7 +16,7 @@ package body Brain is
       button2HasTransitioned : Boolean := True;
       button1State : Boolean := False;
       button2State : Boolean := False;
-      period : Time_Span := Milliseconds(30);
+      period : Time_Span := Milliseconds(5);
       startTime : Time;
    begin
       startTime := Clock;
@@ -60,7 +60,7 @@ package body Brain is
    task body SendData is
       Txdata : Radio.RadioData;
       payloadData : Payload_Data;
-      period : Time_Span := Milliseconds(60);
+      period : Time_Span := Milliseconds(5);
       startTime : Time;
    begin
       startTime := Clock;

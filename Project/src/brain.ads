@@ -2,8 +2,8 @@ with nRF.Radio; use nRF.Radio;
 
 package Brain is
 
-   task GetInputs with Priority => 2;
-   task SendData with Priority => 1;
+   task GetInputs with Priority => 1;
+   task SendData with Priority => 2;
    
    protected InputPO is
       procedure Set(payload : Payload_Data);
